@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-	int n, spacesB = -1;
+	int n, spacesB = -1;  // spacesB => spaces Between numbers in the same line.
 	cin >> n;
 	bool isNumber = false;
 	for (int row = 1; row <= n; row++) {
@@ -17,7 +17,7 @@ int main() {
 			cout << row;
 		}
 
-		else if (row == n) for (int lastR = 1; lastR <= n + (n - 1); lastR++) {
+		else if (row == n) for (int lastR = 1; lastR <= n + (n - 1); lastR++) {   // lastR => last Row.
 			isNumber = !isNumber;
 			if (isNumber) cout << n;
 			else cout << " ";
