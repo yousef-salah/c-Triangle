@@ -24,10 +24,9 @@ int main() {
 		}
 		else cout << row;
 
-		for (int sapces = 1; sapces <= n - row; sapces++) {
-			cout << " ";
-		}
-		cout << endl;
+		for (int sapces = 1; sapces <= n - row; sapces++) cout << " ";
+		
+	    cout << endl;
 	}
 	return 0;
 }
