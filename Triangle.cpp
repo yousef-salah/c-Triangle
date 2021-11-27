@@ -2,13 +2,15 @@
 
 using namespace std;
 
+void Spaces(int , int);
+
 int main() {
 	int n, spacesB = -1;  // spacesB => spaces Between numbers in the same line.
 	cin >> n;
 	bool isNumber = false;
 	for (int row = 1; row <= n; row++) {
 
-		for (int sapces = 1; sapces <= n- row; sapces++) cout << " ";		
+		Spaces(n, row);
 	
 		if (row != 1 and row != n) {
 			spacesB += 2;
@@ -24,9 +26,23 @@ int main() {
 		}
 		else cout << row;
 
-		for (int sapces = 1; sapces <= n - row; sapces++) cout << " ";
+		Spaces(n, row);
 		
 	    cout << endl;
 	}
 	return 0;
 }
+
+void Spaces( int n, int row) {
+	for (int sapces = 1; sapces <= n - row; sapces++) cout << " ";
+}
+
+//Input = 5
+
+//OutPut
+//    1
+//   2 2
+//  3   3
+// 4     4
+//5 5 5 5 5
+
