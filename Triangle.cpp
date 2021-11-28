@@ -39,7 +39,7 @@ void Spaces( int n, int row) {
 
 //Input = 5
 
-//OutPut
+//OutPut:
 //    1
 //   2 2
 //  3   3
